@@ -2,4 +2,18 @@ footer {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+
+    .copy-info p {
+      display: inline-block;
+      text-align: left;
+      justify-content: flex-start;
+    }
+    
+    @media screen and (min-width: 636px) {
+      .copy-info p {
+        padding: 2rem 0;
+        text-align: right;
+      }
+    }
   }
+
