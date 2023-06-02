@@ -1,5 +1,7 @@
 ---
 import '../styles/main.less';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 const pageTitle = "About Me";
 
 const identity = {
@@ -25,10 +27,7 @@ const goal = 3;
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<body>
-            <a href="/">Home</a>
-            <a href="/about/">About</a>
-            <a href="/blog">Blog</a>
+            <Navigation />
 
             <h1>My Astro Site</h1>
             <h1>About Me</h1>
@@ -51,6 +50,7 @@ const goal = 3;
                 {finished && <p>I finished this tutorial!</p>}
 
                 {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-          </body>
+
+            <Footer></Footer>
 	</body>
 </html>
