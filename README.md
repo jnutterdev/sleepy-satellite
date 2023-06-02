@@ -2,7 +2,8 @@
 
 A simple blog created from the Astro starter kit. This will soon be used as the new withonlyamap.com website after some styling and design has been finished up. 
 
-`npm i` to install
-`npm run dev` to start up dev server
-`npm run build` to build static pages
-`npm run preview` to preview static site
+
+- `npm i` to install
+- `npm run dev` to start up dev server
+- `npm run build` to build static pages
+- `npm run preview` to preview static site
