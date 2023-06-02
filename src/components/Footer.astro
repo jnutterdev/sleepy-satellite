@@ -3,7 +3,13 @@ import Social from './Social.astro';
 ---
 
 <footer>
-  <Social platform="twitter" username="withonlyamap" />
-  <Social platform="github" username="jnutterdev" />
-  <Social platform="youtube" username="terribledevice" />
+  <div class="social-links">
+    <Social platform="twitter" username="withonlyamap" />
+    <Social platform="github" username="jnutterdev" />
+    <Social platform="youtube" username="terribledevice" />
+  </div>
+  <div class="copy-info">
+    <p>© 2021 John Nutter.</p>
+    <p>Site built with <a href="https://astro.build/" target="_blank" rel="noopener">Astro</a></p>
+  </div>
 </footer>
