@@ -4,15 +4,14 @@
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #ff9776;
     display: none;
     margin: 0;
   }
   
   .nav-links a {
+    color: black;
     display: block;
     text-align: center;
-    padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -20,7 +19,9 @@
   }
   
   .nav-links a:hover, a:focus {
-    background-color: #ff9776;
+    background-image: url('/public/images/sword.svg');
+    background-repeat: no-repeat;
+    background-position: left;
   }
   
   .expanded {
@@ -29,15 +30,30 @@
   
   @media screen and (min-width: 636px) {
     .nav-links {
-      display: block;
-      position: static;
+      display: inline-block;
       width: auto;
-      background: none;
     }
   
     .nav-links a {
       display: inline-block;
-      padding: 15px 20px;
+      padding: 2rem;
     }
+
+    .nav-links a:hover, a:focus {
+      background-image: url('/public/images/sword.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 2rem;
+      padding: 2rem;
+    }
+  }
+
+  .dark .nav-links a {
+    color:white;
+  }
   
+  .dark .nav-links a:hover, .dark .nav-links a:focus {
+    background-image: url('/public/images/sword-dark.svg');
+    background-repeat: no-repeat;
+    background-position: right;
   }

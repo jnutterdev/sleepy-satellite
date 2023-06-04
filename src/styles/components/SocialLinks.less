@@ -1,0 +1,55 @@
+.SocialLinks {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 2rem;
+
+  a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem .25rem;
+    margin: 0 1rem;
+    display: block;
+  }
+
+  a:hover, a:focus{
+    background-image: url('/public/images/skull.svg');
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 1rem .25rem;
+    margin: 0 1rem;
+  }
+
+  @media screen and (min-width: 636px) {
+
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 2rem;
+        margin: 0 1rem;
+        display: inline-block;
+      }
+
+    a:hover, a:focus{
+      background-image: url('/public/images/skull.svg');
+      background-size: 2rem;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding: 2rem;
+      margin: 0 1rem;
+    }
+  }
+}
+
+.dark .SocialLinks a {
+  color: white;
+}
+
+.dark .SocialLinks a:hover, .dark .SocialLinks a:focus {
+  background-image: url('/public/images/skull-dark.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
