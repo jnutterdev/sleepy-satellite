@@ -1,12 +1,17 @@
 footer {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
+    border-top: 1px solid black;
+
 
     .copy-info p {
+      flex: 1;
+      margin: 1rem auto;
       display: inline-block;
-      text-align: left;
-      justify-content: flex-start;
+      justify-content: space-around;
+    
 
      a {
         color: black;
@@ -16,9 +21,14 @@ footer {
     }
     
     @media screen and (min-width: 636px) {
-      .copy-info p {
-        padding: 2rem 0;
-        text-align: right;
+      footer {
+        flex-direction: row;
+
+        .copy-info p {
+          margin: 1rem auto;
+          padding: 2rem 0;
+          text-align: left;
+        }
       }
     }
   }
