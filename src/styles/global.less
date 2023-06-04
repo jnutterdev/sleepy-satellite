@@ -1,12 +1,17 @@
 html {
-    background-color: @background-color;
+    background-color: @brand-white;
     font-family: sans-serif;
   }
 
-  html.dark {
-    background-color: #0d0950;
-    color: #fff;
-  }
+html.dark {
+  background-color: @brand-black;
+  color: @brand-white;
+}
+
+html.light {
+  background-color: @brand-white;
+  color: @brand-black;
+}
   
   .dark .nav-links a {
     color: #fff;
@@ -34,4 +39,9 @@ html {
     color: @link-color;
     background-color: @link-bg-color;
     text-align: none;
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    background-color: #ff9776;
   }

@@ -3,8 +3,10 @@
     background: none;
   }
   .sun { fill: black; }
-  .moon { fill: transparent; }
+  .moon { fill: white; }
   
+  :global(.dark) .sun { fill: black; }
+  :global(.dark) .moon { fill: transparent; }
 
-  :global(.dark) .sun { fill: transparent; }
-  :global(.dark) .moon { fill: white; }
+  :global(.light) .sun { fill: transparent; }
+  :global(.light) .moon { fill: black; }
