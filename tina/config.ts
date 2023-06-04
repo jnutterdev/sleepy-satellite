@@ -14,7 +14,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "images",
       publicFolder: "public",
     },
   },
@@ -23,7 +23,7 @@ export default defineConfig({
       {
         name: "post",
         label: "Posts",
-        path: "content/posts",
+        path: "src/pages/posts",
         fields: [
           {
             type: "string",
@@ -33,10 +33,26 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "datetime",
+            name: "posted",
+            label: "Date Posted",
+            ui: {
+              timeFormat: "HH:mm",
+              dateFormat: "YYYY-MM-DD",
+            },
+            required: true,
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
             isBody: true,
+          },
+          {
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true,
           },
         ],
       },
