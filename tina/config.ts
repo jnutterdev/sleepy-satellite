@@ -24,7 +24,22 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "src/pages/posts",
+        defaultItem: () => {
+          return {
+            title: 'New Post',
+            pubDate: new Date().toDateString(),
+            author: 'John',
+            layout: '../../layouts/MarkdownPostLayout.astro',
+            tags: ['unsorted'],
+          }
+        },
         fields: [
+          {
+            type: "string",
+            name: "layout",
+            label: "Layout",
+            required: true,
+          },
           {
             type: "string",
             name: "title",
@@ -33,8 +48,13 @@ export default defineConfig({
             required: true,
           },
           {
+            label: 'Author',
+            name: 'author',
+            type: 'string',
+          },
+          {
             type: "datetime",
-            name: "posted",
+            name: "pubDate",
             label: "Date Posted",
             ui: {
               timeFormat: "HH:mm",
