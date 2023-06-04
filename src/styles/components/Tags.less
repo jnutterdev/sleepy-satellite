@@ -6,11 +6,32 @@
 
 .tag {
     margin: 0.25em;
-    border: dotted 1px #a1a1a1;
+    border: solid 1px #a1a1a1;
     border-radius: .5em;
     padding: .5em 1em;
     font-size: 1.15em;
-    background-color: #F8FCFD;
+
+    &__ttrpg {
+        background-color: @fuschia;
+    }
+    &__boardgames {
+        background-color: @lime;
+    }
+    &__videogames {
+        background-color: @sky;
+    }
+    &__music {
+        background-color: @rose;
+    }
+    &__miniatures {
+        background-color: @violet;
+    }
+    &__art {
+        background-color: @emerald;
+    }
+    &__other {
+        background-color: @yellow;
+    }
 }
 
 .tag a {
@@ -19,7 +40,6 @@
 }
 
 .tag:hover, .tag:focus {
-    background-color: red;
     color: white;
 }
 

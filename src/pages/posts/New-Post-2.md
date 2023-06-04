@@ -4,7 +4,7 @@ title: New Post 2
 author: John
 pubDate: 2023-06-03T04:00:00.000Z
 tags:
-  - unsorted
+  - miniatures
 ---
 
 THIS IS A MF TEST B!!!

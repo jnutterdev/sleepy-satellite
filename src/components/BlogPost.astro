@@ -1,5 +1,5 @@
 ---
-const { url, title } = Astro.props;
+const { url, title, tag } = Astro.props;
 ---
 
-<li><a href={url}>{title}</a></li>
+<li><a class={`tag__${tag}`} href={url}>{title}</a></li>

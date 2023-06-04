@@ -30,7 +30,7 @@ export default defineConfig({
             pubDate: new Date().toDateString(),
             author: 'John',
             layout: '../../layouts/MarkdownPostLayout.astro',
-            tags: ['unsorted'],
+            tags: ['other'],
           }
         },
         fields: [
@@ -73,6 +73,35 @@ export default defineConfig({
             name: 'tags',
             type: 'string',
             list: true,
+            options: [
+              {
+                value: "ttrpg",
+                label: "ttrpg"
+              }, {
+                value: "boardgames",
+                label: "boardgames"
+              },
+              {
+                value: "videogames",
+                label: "videogames"
+              },
+              {
+                value: "music",
+                label: "music"
+              },
+              {
+                value: "miniatures",
+                label: "miniatures"
+              },
+              {
+                value: "art",
+                label: "art"
+              },
+              {
+                value: "other",
+                label: "other"
+              }
+            ]
           },
         ],
       },
