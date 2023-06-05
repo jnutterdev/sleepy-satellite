@@ -22,7 +22,7 @@ const filteredPosts = posts.filter((post) => post.frontmatter.tags.includes(tag)
 <BaseLayout pageTitle={tag}>
     <section>
       <div>
-        <a href="/tags/"><-- Back</a>
+        <a href="/tags/"><img src="/public/images/left-arrow.svg" alt="left arrow" width="15"> back</a>
       </div>
       <p>Posts tagged with {tag}</p>
       <ul>

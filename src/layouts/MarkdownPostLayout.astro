@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
             <div class="back">
-                <a href="/blog/"><-- back</a>
+                <a href="/blog/"><img src="/public/images/left-arrow.svg" alt="left arrow" width="15"> back</a>
             </div>
             <main>
                 <h1>{frontmatter.title}</h1>
